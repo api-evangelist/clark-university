@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/clark-university/integrations
+- https://n8n.io/integrations/clark-university/
+- https://composio.dev/toolkits/clark-university
+- https://monid.ai/tools/clark-university
+checked:
+- https://composio.dev/toolkits/clark-university
+- https://monid.ai/tools/clark-university
+- https://n8n.io/integrations/clark-university/
+- https://zapier.com/apps/clark-university/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

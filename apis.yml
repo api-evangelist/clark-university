@@ -1,23 +1,72 @@
 aid: clark-university
+
 name: Clark University
-description: 'Clark University is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.clarku.edu/wp-content/uploads/2026/05/jonas-clark-hall.jpg
+
+description: 'Clark University is a private research university located in Worcester, Massachusetts. It offers undergraduate and graduate programs across various disciplines, emphasizing experiential learning and community engagement. The university maintains a website with information about its academics, admissions, research, and campus life.'
+
 url: https://raw.githubusercontent.com/api-evangelist/clark-university/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
+- Education
+- University
+- Research
+- Worcester
+- HigherEd
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/clark-university-hosts.yml
+- type: Support
+  url: https://support.clarku.edu/support/home
+- type: Newsroom
+  url: https://www.clarku.edu/news/
+- type: Leadership
+  url: https://www.clarku.edu/about/leadership/
+- type: DomainSecurity
+  url: security/clark-university-domain-security.yml
 - type: Website
   url: https://www.clarku.edu/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://cdn.clarku.edu/mcp
+    status: 403
+  - url: https://www.clarku.edu/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
